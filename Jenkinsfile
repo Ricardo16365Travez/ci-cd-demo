@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clonar') {
             steps {
-                git 'https://github.com/Ricardo16365Travez/ci-cd-demo.git'
+                git branch: 'main', url: 'https://github.com/Ricardo16365Travez/ci-cd-demo.git'
             }
         }
         stage('Ejecutar') {
